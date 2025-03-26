@@ -11,7 +11,8 @@ const socketIo = require("socket.io");  // Importar socket.io
 const crypto = require("crypto");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
+
 
 // Middleware
 app.use(cors());
