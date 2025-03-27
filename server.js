@@ -11,7 +11,7 @@ const socketIo = require("socket.io");  // Importar socket.io
 const crypto = require("crypto");
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 
 
 // Middleware
