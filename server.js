@@ -518,7 +518,7 @@ app.post("/api/compra", async (req, res) => {
 
   try {
     const [rows] = await db.promise().query(
-      "CALL realizar_compra(?, ?, ?)", 
+      "CALL RealizarCompra(?, ?, ?)", 
       [id_usuario, id_producto, cantidad]
     );
 
